@@ -8,7 +8,7 @@ title = input("Enter the title of the movie: ")
 url = f"http://www.omdbapi.com/?t={title}&apikey={'690d1758'}"
 response = requests.get(url)
 
-# Using 3-4 functions/attributes of the requests module
+# Using functions/attributes of the requests module
 print(f'URL: {r.url}')
 print(f'Status Code: {r.status_code}')
 print(f'Response headers: {r.headers}')
