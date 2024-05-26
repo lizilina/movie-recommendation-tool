@@ -9,9 +9,9 @@ url = f"http://www.omdbapi.com/?t={title}&apikey={'690d1758'}"
 response = requests.get(url)
 
 # Using functions/attributes of the requests module
-print(f'URL: {r.url}')
-print(f'Status Code: {r.status_code}')
-print(f'Response headers: {r.headers}')
+print(f'URL: {response.url}')
+print(f'Status Code: {response.status_code}')
+print(f'Response headers: {response.headers}')
 
 # Gives user the details about the move.
 if response.status_code == 200:
